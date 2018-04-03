@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Trip-Japan</title>
+    <meta charset="utf-8">
+    <meta content="IE=edge" http-equiv="x-ua-compatible">
+    <meta content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, width=device-width, minimal-ui" name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,700" rel="stylesheet" type="text/css">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="icon" href="img/logo.ico">
+    <!-- Styles -->
+    <link href="css/keyframes.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+    <link href="css/swiper.css" rel="stylesheet" type="text/css">
+    <link href="css/swipebox.min.css" rel="stylesheet" type="text/css">
+    <link href="css/trip.css" rel="stylesheet" type="text/css">
+</head>
+
+  <body>
+    <div class="m-scene" id="main"> <!-- Main Container -->
+      <!-- Sidebars -->
+
+      <!-- Left Sidebar -->
+      <ul id="slide-out-left" class="side-nav collapsible">
+          <li>
+              <div class="sidenav-header">
+                  <div class="nav-logo">
+                      <h2><span>Trip Share,</span><span> Like Share.</h2>
+                  </div>
+                  <div class="nav-avatar">
+                      <a href="#"><img class="circle avatar" src="img/avatar/avatar2.jpg" alt=""></a>
+                      <div class="avatar-body">
+                          <h3>Eric Mick</h3>
+                          <p class="star">
+                              <i class="material-icons">star</i>
+                              <i class="material-icons">star</i>
+                              <i class="material-icons">star</i>
+                              <i class="material-icons">star_border</i>
+                              <i class="material-icons">star_border</i>
+                          </p>
+                      </div>
+                  </div>
+              </div>
+          </li>
+          <li class="active">
+              <div class="collapsible-header">
+                  <a href="#"> Home</a>
+              </div>
+          </li>
+          <li>
+              <div class="collapsible-header">
+                   <a href="#"> Users</a>
+              </div>
+          </li>
+          <li>
+              <div class="collapsible-header">
+                  <a href="#"> Trips</a>
+              </div>
+          </li>
+          <li>
+              <div class="collapsible-header">
+                  <a href="#"> Mypage</a>
+              </div>
+          </li>
+          <li>
+              <div class="collapsible-header">
+                  <a href="#"> Messages <span class="new badge">24</span></a>
+              </div>
+          </li>
+          <li>
+              <div class="collapsible-header">
+                   Setting
+              </div>
+              <div class="collapsible-body">
+                  <ul class="collapsible">
+                      <li>
+                          <a href="#"><i class="material-icons">fiber_manual_record</i> text...</a>
+                          <a href="#"><i class="material-icons">fiber_manual_record</i> text...</a>
+                          <a href="#"><i class="material-icons">fiber_manual_record</i> text...</a>
+                          <a href="#"><i class="material-icons">fiber_manual_record</i> text...</a>
+                      </li>
+                  </ul>
+              </div>
+          </li>
+          <li>
+              <div class="collapsible-header">
+
+              </div>
+          </li>
+
+
+      </ul>
+      <!-- End of Sidebars -->
+      <!------------m^^m------------ Page Content ------------o^^o------------>
+      <div id="content" class="page">
+
+        <!------------m^^m------------ Header Top------------o^^o------------>
+        <header class="primary-color toolbar-fix">
+            <div class="open-left" id="open-left" data-activates="slide-out-left">
+                <i class="material-icons">menu</i>
+            </div>
+           <div class="title center">MESSAGES</div>
+        </header>
+
+        <!-- Main Content -->
+        <div class="animated fadeinup">
+
+          <ul class="chat-list">
+              <li>
+                <span class="chat-count">3</span>
+                <img src="img/avatar/avatar3.jpg" alt="" class="avatar circle">
+                <div class="chat-body">
+                  <span class="author">Luke Noel</span>
+                  <p>Nice trip infomation!</p>
+                </div>
+              </li>
+              <li>
+                <span class="chat-count">21</span>
+                <img src="img/avatar/avatar1.jpg" alt="" class="avatar circle">
+                <div class="chat-body">
+                  <span class="author">Joel Roksin</span>
+                  <p>Thanks for your info... :)</p>
+                </div>
+              </li>
+              <li>
+                <img src="img/avatar/avatar2.jpg" alt="" class="avatar circle">
+                <div class="chat-body">
+                  <span class="author">Mike White</span>
+                  <p>Could you tell me...</p>
+                </div>
+              </li>
+              <li>
+                <img src="img/avatar/avatar4.jpg" alt="" class="avatar circle">
+                <div class="chat-body">
+                  <span class="author">Joel Roksin</span>
+                  <p>So cool!</p>
+                </div>
+              </li>
+              <li>
+                <img src="img/avatar/avatar1.jpg" alt="" class="avatar circle">
+                <div class="chat-body">
+                  <span class="author">Mike White</span>
+                  <p>Nice to meet you!</p>
+                </div>
+              </li>
+            </ul>
+
+        </div> <!-- End of Main Contents -->
+
+
+      </div> <!-- End of Page Content -->
+
+    </div> <!-- End of Page Container -->
+
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="js/jquery.swipebox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/jquery.mixitup.min.js"></script>
+    <script src="js/masonry.min.js"></script>
+    <script src="js/chart.min.js"></script>
+    <script src="js/functions.js"></script>
+  </body>
+</html>

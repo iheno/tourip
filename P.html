@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Trip-Japan</title>
+    <meta charset="utf-8">
+    <meta content="IE=edge" http-equiv="x-ua-compatible">
+    <meta content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, width=device-width, minimal-ui" name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,700" rel="stylesheet" type="text/css">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="icon" href="img/logo.ico">
+    <!-- Styles -->
+    <link href="css/keyframes.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+    <link href="css/swiper.css" rel="stylesheet" type="text/css">
+    <link href="css/swipebox.min.css" rel="stylesheet" type="text/css">
+    <link href="css/trip.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+<div class="m-scene" id="main"> <!-- Main Container -->
+
+    <!-- Page Content -->
+    <div id="content">
+
+        <!-- Toolbar -->
+        <header class="toolbar-move-sub anytimes-nav box-shad-none">
+            <a class="open-left" href="#">
+                <i class="material-icons">arrow_back</i>
+            </a>
+            <span class="title">Eric Mick</span>
+            <div class="open-right">
+                <a href="#" class="like-btn"><i class="material-icons">favorite_border</i></a>
+                <!--<a href="#" class="like-btn active"><i class="material-icons">favorite</i></a>-->
+            </div>
+        </header>
+
+        <!-- profile Header Top -->
+        <div class="h-banner p-banner animated fadeindown">
+            <div class="parallax">
+                <div class="profile-bg"><img src="img/avatar/avatar2.jpg" alt=""></div>
+                <div class="my-profile animated fadein delay-1 profile-top-contents">
+                    <div class="my-header">
+                        <img class="avatar circle" src="img/avatar/avatar2.jpg" alt="">
+                    </div>
+                    <div class="profile-nickname">Eric Mick</div>
+                </div>
+
+                <div class="p-banner-bottom">
+                  <div class="card-profile animated fadeinup delay-1 border-r-line">
+                    <div class="c-widget">
+                      <div class="c-widget-body">
+                        <p class="m-0">5</p>
+                        <p class="x-small m-0">Tips</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-profile animated fadeinup delay-1">
+                    <div class="c-widget">
+                      <div class="c-widget-body">
+                        <p class="m-0">32</p>
+                        <p class="x-small m-0">Fans</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+
+        <ul class="tabs profile_tab animated fadeinup delay-2">
+            <li class="tab"><a class="active" href="#profile-info">Profile</a></li>
+            <li class="tab"><a href="#profile-commnet">Comments<span>(3)</span></a></li>
+        </ul>
+
+        <div id="profile-info">
+
+          <div class="animated fadeinup delay-2 profile-stats-box clearfix">
+              <dl>
+                  <dt>City and Country</dt>
+                  <dd>Paris, France</dd>
+              </dl>
+          </div>
+
+          <div class="animated fadeinup delay-2 category-detail-box clearfix">
+            <h4 class="category-name"><i class="material-icons">loyalty</i>Favorance</h4>
+            <ul>
+                <li class="chip">Tokyo</li>
+                <li class="chip">Susi</li>
+                <li class="chip">Onigiri</li>
+            </ul>
+          </div>
+
+          <div class="detail-txt-area animated fadeinup delay-3">
+            <h3>Guide Infomation</h3>
+            <ul class="detail-txt-list">
+              <li>
+                  <div class="detail-txt-body">
+                      <span class="author">Rate</span>
+                      <p class="star">
+                          <i class="material-icons">star</i>
+                          <i class="material-icons">star</i>
+                          <i class="material-icons">star</i>
+                          <i class="material-icons">star_border</i>
+                          <i class="material-icons">star_border</i>
+                      </p>
+                  </div>
+              </li>
+                <li>
+                    <div class="detail-txt-body">
+                        <span class="author">Last Trip</span>
+                        <p>Oct 2,2018 ~ Oct 10,2018</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="detail-txt-body">
+                        <span class="author">Place</span>
+                        <p>Tokyo</p>
+                    </div>
+                </li>
+            </ul>
+          </div>
+
+          <div class="detail-txt-area animated fadeinup delay-4">
+            <h3>Self-introduction</h3>
+            <p class="detail-txt-info">
+              Hello! My name is Eric Mick. I am from France. I like Japanese Food.
+              to be a better man..a lot of mistakes and silly act you makes during the way.
+  to be a better man..need a courage to know what is right and doing what is right.
+  to be a better man..is not afraid to make that mistakes, coz above all it will make u...
+  a better man
+            </p>
+          </div>
+
+          <div class="detail-txt-area p-20 animated fadeinup delay-5">
+            <h3 class="m-b-20">My Trips</h3>
+            <!-- Filters -->
+            <div class="controls">
+              <button id="ChangeLayout" class="left">Grid</button>
+              <label>#</label>
+              <button class="filter" data-filter="all">All</button>
+              <button class="filter" data-filter=".category-1">Tirp</button>
+              <button class="filter" data-filter=".category-2">Food</button>
+              <button class="filter" data-filter=".category-3">Culture</button>
+            </div>
+
+
+            <div id="filter">
+              <!-- Swipeboox Contents -->
+              <section id="image-filter">
+                <div class="wrap small-width">
+                  <div data-pswp-uid="1" id="demo-gallery" class="demo-gallery">
+                    <a href="#" class=" mix category-1 no-smoothState" title="">
+                      <img src="img/1.jpg" alt="image">
+                      <span class="trip_text">Tokyo Trip</span>
+                      <span class="trip_date">Feb 10, 2018</span>
+                    </a>
+                    <a href="#" class=" mix category-1 no-smoothState" title="">
+                      <img src="img/2.jpg" alt="image">
+                      <span class="trip_text">Fantastic Japan</span>
+                      <span class="trip_date">Feb 10, 2018</span>
+                    </a>
+                    <a href="#" class=" mix category-2 no-smoothState" title="">
+                      <img src="img/3.jpg" alt="image">
+                      <span class="trip_text">Enjopy Japan Trip</span>
+                      <span class="trip_date">Feb 10, 2018</span>
+                    </a>
+                    <a href="#" class=" mix category-2 no-smoothState" title="">
+                      <img src="img/4.jpg" alt="image">
+                      <span class="trip_text">Osaka Nigiht Trevel</span>
+                      <span class="trip_date">Feb 10, 2018</span>
+                    </a>
+                    <a href="#" class=" mix category-3 no-smoothState" title="">
+                      <img src="img/5.jpg" alt="image">
+                      <span class="trip_text">Culture of Japan</span>
+                      <span class="trip_date">Feb 10, 2018</span>
+                    </a>
+                    <a href="#" class=" mix category-1 no-smoothState" title="">
+                      <img src="img/6.jpg" alt="image">
+                      <span class="trip_text">Do you know Shibuya Culture? </span>
+                      <span class="trip_date">Feb 10, 2018</span>
+                    </a>
+                  </div>
+                </div>
+              </section> <!-- End of Swipebox Contents -->
+
+            </div>
+            <!-- End of Main Contents -->
+
+            <div class="clr"></div>
+
+          </div>
+
+          <div class="animated fadeinup delay-5">
+            <ul class="social-area">
+                <li><a href="#"><img src="img/fbm-icon.svg" alt="Facebook Message"></a></li>
+                <li><a href="#"><img src="img/fb-icon.svg" alt="Facebook"></a></li>
+                <li><a href="#"><img src="img/tw-icon.svg" alt="Twitter"></a></li>
+                <li><a href="#"><img src="img/mail-icon.svg" alt="mail"></a></li>
+            </ul>
+          </div>
+
+        </div>
+
+        <div id="profile-commnet">
+            <!-- Comments -->
+          <div class="comments">
+            <h3><span>3</span>Comments</h3>
+            <ul class="comments-list">
+              <li>
+                <img src="img/avatar/avatar4.jpg" alt="" class="avatar circle">
+                <div class="comment-body">
+                  <span class="author">Hellena</span>
+                  <span class="date">2019.2.12</span>
+                  <div class="comment-title clearfix">Nice Trip!</div>
+                  <p>I like your Trip tips..!</p>
+                </div>
+              </li>
+              <li>
+                <img src="img/avatar/avatar1.jpg" alt="" class="avatar circle">
+                <div class="comment-body">
+                  <span class="author">Jesica</span>
+                  <span class="date">2018.12.24</span>
+                  <div class="comment-title clearfix">It's so Good!</div>
+                  <p>It's very useful for me</p>
+                </div>
+              </li>
+              <li>
+                <img src="img/avatar/avatar3.jpg" alt="" class="avatar circle">
+                <div class="comment-body">
+                  <span class="author">Kim Govel</span>
+                  <span class="date">2018.7.14</span>
+                  <div class="comment-title clearfix">I like Japanese food too</div>
+                  <p>I like Japanese food too. Thanks.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+    </div><!-- /Content -->
+
+</div> <!-- /Main Container -->
+
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script src="js/jquery.swipebox.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+<script src="js/swiper.min.js"></script>
+<script src="js/jquery.mixitup.min.js"></script>
+<script src="js/masonry.min.js"></script>
+<script src="js/chart.min.js"></script>
+<script src="js/functions.js"></script>
+
+  </body>
+</html>
