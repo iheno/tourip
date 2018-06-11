@@ -1,12 +1,12 @@
 @charset "UTF-8";
 /*-----------------------------------------------------------------------------------*/
 /*
-/*      made by Anytimes
+/*      made by HENO
 /*-----------------------------------------------------------------------------------*/
 
 @import url(https://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
-body {font-family: 'Noto Sans Japanese','YuGothic', 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'Osaka', 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
-color: #313131; overflow-x: hidden; background:#fff;}
+body {font-family: 'Open Sans', sans-serif;
+color: #313131; overflow-x: hidden;}
 .anyBG { background:url(../img/bg.jpg) center/cover no-repeat; -webkit-background-size:cover auto; display:block; width:100%; background-attachment:fixed;}
 .cardBG { background:#eff3f5;}
 .category-body { background:#fbfbfb;}
@@ -310,13 +310,13 @@ header {background: #FF1744; position: fixed; top: 0; transition: top 0.2s ease-
 .toolbar-move {width: 100%; height: 96px;}
 .toolbar-move.transparent {background-color: transparent !important; position: absolute; top: 0; left: 0; right: 0;}
 .toolbar-move i {font-size: 24px; line-height: 48px; color: #fff;}
-.toolbar-move .title {font-size: 18px; font-weight: 600; color: #fff; text-align: center; display: inline-block; padding: 0; text-transform: none; letter-spacing: normal; background-image:url(../img/logo.png); background-size:100%  auto; width:123px; height:13px; text-indent:-9999px; margin:18px 0 0 20px;}
-.toolbar-move .header-title {font-size: 16px; font-weight: 600; color: #fff; line-height: 48px; text-align:center; padding-right:40px !important;}
+.toolbar-move .title {font-size: 18px; font-weight: 600; color: #fff; text-align: center; display: inline-block; padding: 0; text-transform: none; letter-spacing: normal; margin:18px 0 0 20px;}
+.toolbar-move .header-title {font-size: 16px; font-weight: 600; color: #fff; line-height: 48px; text-align:center; display: inline; padding-left: 6px;}
 .header-icon { margin-top:-48px;}
 .toolbar-basic {width: 100%; height: 48px;}
 .toolbar-basic.transparent {background-color: transparent !important; position: absolute; top: 0; left: 0; right: 0;}
 .toolbar-basic i {font-size: 24px; line-height: 48px; color: #fff;}
-.toolbar-basic .title {font-size: 18px; font-weight: 600; color: #fff; text-align: center; display: inline-block; padding: 0; text-transform: none; letter-spacing: normal; background-image:url(../img/logo.png); background-size:100%  auto; width:123px; height:13px; text-indent:-9999px; margin:18px 0 0 20px;}
+.toolbar-basic .title {font-size: 18px; font-weight: 600; color: #fff; text-align: center; display: inline-block; padding: 0; text-transform: none; letter-spacing: normal; background-image:url(../img/logo.png); background-size:100%  auto; width:37px; height:13px; text-indent:-9999px; margin:18px 0 0 20px;}
 .toolbar-basic .header-title {font-size: 16px; font-weight: 600; color: #fff; line-height: 48px; text-align:center; padding-right:40px !important;}
 .navbar-basic {  background:#fff; width:100%;  margin-top:48px; position:relative;}
 .navbar-second {top:48px; position:fixed; width: 100%;}
@@ -364,8 +364,8 @@ word-wrap: break-word; white-space: nowrap; -webkit-text-overflow:ellipsis; text
 .dec-minus45 { -webkit-transform: rotate(-45deg); transform: rotate(-45deg);}
     /* Tab */
 	.tabs { background:#fff;}
-	.tabs .tab{display:block;float:left;text-align:center;line-height:48px;height:48px;padding:0;margin:0;text-transform: none; min-width:30% !important;}
-    .tabs .tab a,.tabs .tab a:hover {color: #FF1744; opacity: 1; font-weight:600; font-size:13px;}
+	.tabs .tab{display:block;float:left;text-align:center;line-height:48px;height:48px;padding:0;margin:0;text-transform: none; min-width:25% !important;}
+    .tabs .tab a,.tabs .tab a:hover {color: #313131; opacity: 1; font-weight:600; font-size:13px;}
     .tabs .tab a.active {color: #FF1744; opacity: 1;}
     .tabs .indicator {background-color: #FF1744; height:3px !important; width:auto !important;}
 	.tabs.profile_tab { background:#fbfbfb; height:60px; padding-bottom:20px; border-bottom:1px solid #f1f1f3;}
@@ -554,6 +554,41 @@ float:left; width:50%;}
 .view-time-mypage { float:left; display:inline; width:36%; font-size:9px; text-align:right; padding:0 16px 0 0; color:#313131;}
 .view-time-mypage i { font-size:8px !important; padding:0 5px 0 0;}
 
+
+/* Blog Card */
+
+.blog-card {
+    margin: 10px;
+    background-color: #fff;
+    border-radius: 2px;
+    -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
+}
+.blog-card .blog-header {
+    padding: 20px 20px 20px 80px;
+    position: relative;
+}
+.blog-card .blog-header img {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+.blog-card .blog-author span {
+    display: block;
+    font-size: 14px;
+}
+.blog-fullwidth .blog-preview h4 {
+    margin-top: 0;
+}
+.blog-preview {
+  padding: 10px 15px;
+}
+.blog-preview h4 {
+    font-size: 16px!important; letter-spacing: 1px; color: #313131;
+}
+.blog-preview p {
+  font-size: 14px;
+}
 /* form */
 .form-inputs {padding: 20px; background-color:rgba(255, 255, 255, 0.95);}
 .form-inputs h4 {margin-bottom: 25px; font-size:16px;}
