@@ -1,136 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <title>Trip-Japan</title>
-    <meta charset="utf-8">
-    <meta content="IE=edge" http-equiv="x-ua-compatible">
-    <meta content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, width=device-width, minimal-ui" name="viewport">
-    <meta content="yes" name="apple-mobile-web-app-capable">
-    <meta content="yes" name="apple-touch-fullscreen">
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,700" rel="stylesheet" type="text/css">
-    <!-- Icons -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="icon" href="img/logo.ico">
-    <!-- Styles -->
-    <link href="css/keyframes.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
-    <link href="css/swiper.css" rel="stylesheet" type="text/css">
-    <link href="css/swipebox.min.css" rel="stylesheet" type="text/css">
-    <link href="css/trip.css" rel="stylesheet" type="text/css">
+  <title>Trip-Japan</title>
+  <meta charset="utf-8">
+  <meta content="IE=edge" http-equiv="x-ua-compatible">
+  <meta content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, width=device-width, minimal-ui" name="viewport">
+  <meta content="yes" name="apple-mobile-web-app-capable">
+  <meta content="yes" name="apple-touch-fullscreen">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,700" rel="stylesheet" type="text/css">
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="icon" href="img/logo.ico">
+  <!-- Styles -->
+  <link href="css/keyframes.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+  <link href="css/swiper.css" rel="stylesheet" type="text/css">
+  <link href="css/swipebox.min.css" rel="stylesheet" type="text/css">
+  <link href="css/trip.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
-<div class="m-scene" id="main"> <!-- Main Container -->
+  <div class="m-scene" id="main">
+    <!-- Main Container -->
     <!-- Sidebars -->
     <!-- Right Sidebar -->
     <ul id="slide-out" class="side-nav">
 
-        <li class="p-15">
-            <!-- Side Search -->
-            <div class="side-search">
+      <li class="p-15">
+        <!-- Side Search -->
+        <div class="side-search">
 
-                 <h3>TripIp Sort</h3>
-                     <ul class="radio-style clearfix">
-                         <li>
-                             <input name="group1" type="radio" id="radio1" checked />
-                             <label for="radio1">The latest</label>
-                         </li>
-                         <li>
-                             <input name="group1" type="radio" id="radio2" />
-                             <label for="radio2">Public interest</label>
-                         </li>
-                         <li>
-                             <input name="group1" type="radio" id="radio3" />
-                             <label for="radio3">Close range</label>
-                         </li>
-                     </ul>
+          <h3>TripIp Sort</h3>
+          <ul class="radio-style clearfix">
+            <li>
+              <input name="group1" type="radio" id="radio1" checked />
+              <label for="radio1">The latest</label>
+            </li>
+            <li>
+              <input name="group1" type="radio" id="radio2" />
+              <label for="radio2">Public interest</label>
+            </li>
+            <li>
+              <input name="group1" type="radio" id="radio3" />
+              <label for="radio3">Close range</label>
+            </li>
+          </ul>
 
-                  <h3>Show Specialists</h3>
-                     <div class="switch view-switch">
-                     <label>
+          <h3>Show Specialists</h3>
+          <div class="switch view-switch">
+            <label>
                      No
                      <input type="checkbox" checked>
                      <span class="lever"></span>
                      Yes
                      </label>
-                     </div>
+          </div>
 
-                  <div class="side-btn">
-                     <button class="btn waves-effect waves-light text-strong primary-color btn-large" type="submit" name="action">Apply
+          <div class="side-btn">
+            <button class="btn waves-effect waves-light text-strong primary-color btn-large" type="submit" name="action">Apply
                      </button>
-                  </div>
+          </div>
 
-             </div>
-        </li>
+        </div>
+      </li>
     </ul>
     <!-- Left Sidebar -->
     <ul id="slide-out-left" class="side-nav collapsible">
-        <li>
-            <div class="sidenav-header">
-                <div class="nav-logo">
-                    <h2><span>Trip Share,</span><span> Like Share.</h2>
-                </div>
-                <div class="nav-avatar">
-                    <a href="#"><img class="circle avatar" src="img/avatar/avatar2.jpg" alt=""></a>
-                    <div class="avatar-body">
-                        <h3>Eric Mick</h3>
-                        <p class="star">
-                            <i class="material-icons">star</i>
-                            <i class="material-icons">star</i>
-                            <i class="material-icons">star</i>
-                            <i class="material-icons">star_border</i>
-                            <i class="material-icons">star_border</i>
-                        </p>
-                    </div>
-                </div>
+      <li>
+        <div class="sidenav-header">
+          <div class="nav-logo">
+            <h2><span>Trip Share,</span><span> Like Share.</h2>
+          </div>
+          <div class="nav-avatar">
+            <a href="#"><img class="circle avatar" src="img/avatar/avatar2.jpg" alt=""></a>
+            <div class="avatar-body">
+              <h3>Eric Mick</h3>
+              <p class="star">
+                <i class="material-icons">star</i>
+                <i class="material-icons">star</i>
+                <i class="material-icons">star</i>
+                <i class="material-icons">star_border</i>
+                <i class="material-icons">star_border</i>
+              </p>
             </div>
-        </li>
-        <li class="active">
-            <div class="collapsible-header">
-                <a href="#"> Home</a>
-            </div>
-        </li>
-        <li>
-            <div class="collapsible-header">
-                 <a href="#"> Users</a>
-            </div>
-        </li>
-        <li>
-            <div class="collapsible-header">
-                <a href="#"> Trips</a>
-            </div>
-        </li>
-        <li>
-            <div class="collapsible-header">
-                <a href="#"> Mypage</a>
-            </div>
-        </li>
-        <li>
-            <div class="collapsible-header">
-                <a href="#"> Messages <span class="new badge">24</span></a>
-            </div>
-        </li>
-        <li>
-            <div class="collapsible-header">
-                 Setting
-            </div>
-            <div class="collapsible-body">
-                <ul class="collapsible">
-                    <li>
-                        <a href="#"><i class="material-icons">fiber_manual_record</i> text...</a>
-                        <a href="#"><i class="material-icons">fiber_manual_record</i> text...</a>
-                        <a href="#"><i class="material-icons">fiber_manual_record</i> text...</a>
-                        <a href="#"><i class="material-icons">fiber_manual_record</i> text...</a>
-                    </li>
-                </ul>
-            </div>
-        </li>
-        <li>
-            <div class="collapsible-header">
+          </div>
+        </div>
+      </li>
+      <li class="active">
+        <div class="collapsible-header">
+          <a href="#"> Home</a>
+        </div>
+      </li>
+      <li>
+        <div class="collapsible-header">
+          <a href="#"> Users</a>
+        </div>
+      </li>
+      <li>
+        <div class="collapsible-header">
+          <a href="#"> Trips</a>
+        </div>
+      </li>
+      <li>
+        <div class="collapsible-header">
+          <a href="#"> Mypage</a>
+        </div>
+      </li>
+      <li>
+        <div class="collapsible-header">
+          <a href="#"> Messages <span class="new badge">24</span></a>
+        </div>
+      </li>
+      <li>
+        <div class="collapsible-header">
+          Setting
+        </div>
+        <div class="collapsible-body">
+          <ul class="collapsible">
+            <li>
+              <a href="#"><i class="material-icons">fiber_manual_record</i> text...</a>
+              <a href="#"><i class="material-icons">fiber_manual_record</i> text...</a>
+              <a href="#"><i class="material-icons">fiber_manual_record</i> text...</a>
+              <a href="#"><i class="material-icons">fiber_manual_record</i> text...</a>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <div class="collapsible-header">
 
-            </div>
-        </li>
+        </div>
+      </li>
 
 
     </ul>
@@ -139,424 +141,590 @@
     <!------------m^^m------------ Page Content ------------o^^o------------>
     <div id="content" class="top-bg">
 
-        <!------------m^^m------------ Header Top------------o^^o------------>
-        <header id="" class="primary-color z-depth-1 toolbar-move">
-            <div class="open-left" id="open-left" data-activates="slide-out-left">
-                <i class="material-icons">menu</i>
-            </div>
-            <div class="header-title">TripIp</div>
-            <div class="open-right" id="open-right" data-activates="slide-out">
-                <i class="material-icons">sort</i>
-            </div>
-            <div class="navbar-fixed">
-                <ul class="tabs">
-                    <li class="tab"><a class="active" href="#step1">All</a></li>
-                    <li class="tab"><a href="#step2">City</a></li>
-                    <li class="tab"><a href="#step3">Culture</a></li>
-                    <li class="tab"><a href="#step4">Food</a></li>
-                    <li class="tab"><a href="#step5">Event</a></li>
-                    <li class="tab"><a href="#step6">People</a></li>
-                    <li class="tab"><a href="#step7">Traffic</a></li>
-                    <li class="tab"><a href="#step8">etc</a></li>
-                </ul>
-            </div>
-
-        </header>
-
-
-
-
-        <!-- List Top -->
-        <div class="list-move">
-
-            <!-- Category List(1) -->
-            <div id="step1" class="col s12 list-top">
-
-              <!-- Main Content -->
-              <div class="animated fadeinup">
-
-                <div class="blog-card animated fadein delay-1">
-                  <div class="blog-header">
-                    <img class="avatar circle" src="img/avatar/avatar1.jpg" alt="">
-                    <div class="blog-author">
-                      <span>Jesica</span>
-                      <span class="small">Paris</span>
-                    </div>
-                  </div>
-                  <div class="blog-image">
-                    <img src="img/1.jpg" alt="">
-                  </div>
-                  <div class="blog-preview">
-                    <h4 class="uppercase">It really Trip in Tokyo</h4>
-                    <p>I hope you have a very exciting and safe flight, honey. And always remember that I love you endlessly because you are the sunshine of my world.</p>
-                  </div>
-                </div>
-
-                <div class="blog-card animated fadein delay-3">
-                  <div class="blog-header">
-                    <img class="avatar circle" src="img/avatar/avatar2.jpg" alt="">
-                    <div class="blog-author">
-                      <span>nick</span>
-                      <span class="small">Tokyo</span>
-                    </div>
-                  </div>
-                  <div class="blog-image">
-                    <img src="img/2.jpg" alt="">
-                  </div>
-                  <div class="blog-preview">
-                    <h4 class="uppercase">I am happy with TripIp</h4>
-                    <p>I hope you have a very exciting and safe flight, honey. And always remember that I love you endlessly because you are the sunshine of my world.</p>
-                  </div>
-                </div>
-
-                <div class="blog-card animated fadein delay-5">
-                  <div class="blog-header">
-                    <img class="avatar circle" src="img/avatar/avatar3.jpg" alt="">
-                    <div class="blog-author">
-                      <span>sun</span>
-                      <span class="small">USA</span>
-                    </div>
-                  </div>
-                  <div class="blog-image">
-                    <img src="img/3.jpg" alt="">
-                  </div>
-                  <div class="blog-preview">
-                    <h4 class="uppercase">IT's a good experience!</h4>
-                    <p>I hope you have a very exciting and safe flight, honey. And always remember that I love you endlessly because you are the sunshine of my world.</p>
-                  </div>
-                </div>
-
-              </div> <!-- End of Main Contents -->
-            </div>
-
-            <!-- Category List(2) -->
-            <div id="step2" class="col s12 list-top">
-
-              <!-- Main Content -->
-              <div class="animated fadeinup">
-
-                <div class="blog-card animated fadein delay-1">
-                  <div class="blog-header">
-                    <img class="avatar circle" src="img/avatar/avatar1.jpg" alt="">
-                    <div class="blog-author">
-                      <span>Jesica</span>
-                      <span class="small">Paris</span>
-                    </div>
-                  </div>
-                  <div class="blog-image">
-                    <img src="img/4.jpg" alt="">
-                  </div>
-                  <div class="blog-preview">
-                    <h4 class="uppercase">It really Trip in Tokyo</h4>
-                    <p>I hope you have a very exciting and safe flight, honey. And always remember that I love you endlessly because you are the sunshine of my world.</p>
-                  </div>
-                </div>
-
-                <div class="blog-card animated fadein delay-3">
-                  <div class="blog-header">
-                    <img class="avatar circle" src="img/avatar/avatar2.jpg" alt="">
-                    <div class="blog-author">
-                      <span>nick</span>
-                      <span class="small">Tokyo</span>
-                    </div>
-                  </div>
-                  <div class="blog-image">
-                    <img src="img/5.jpg" alt="">
-                  </div>
-                  <div class="blog-preview">
-                    <h4 class="uppercase">I am happy with TripIp</h4>
-                    <p>I hope you have a very exciting and safe flight, honey. And always remember that I love you endlessly because you are the sunshine of my world.</p>
-                  </div>
-                </div>
-
-                <div class="blog-card animated fadein delay-5">
-                  <div class="blog-header">
-                    <img class="avatar circle" src="img/avatar/avatar3.jpg" alt="">
-                    <div class="blog-author">
-                      <span>sun</span>
-                      <span class="small">USA</span>
-                    </div>
-                  </div>
-                  <div class="blog-image">
-                    <img src="img/6.jpg" alt="">
-                  </div>
-                  <div class="blog-preview">
-                    <h4 class="uppercase">IT's a good experience!</h4>
-                    <p>I hope you have a very exciting and safe flight, honey. And always remember that I love you endlessly because you are the sunshine of my world.</p>
-                  </div>
-                </div>
-
-              </div> <!-- End of Main Contents -->
-
-            </div>
-
-            <!-- Category List(3) -->
-            <div id="step3" class="col s12 list-top">
-
-              <!-- Main Content -->
-              <div class="animated fadeinup">
-
-                <div class="blog-card animated fadein delay-1">
-                  <div class="blog-header">
-                    <img class="avatar circle" src="img/avatar/avatar1.jpg" alt="">
-                    <div class="blog-author">
-                      <span>Jesica</span>
-                      <span class="small">Paris</span>
-                    </div>
-                  </div>
-                  <div class="blog-image">
-                    <img src="img/3.jpg" alt="">
-                  </div>
-                  <div class="blog-preview">
-                    <h4 class="uppercase">It really Trip in Tokyo</h4>
-                    <p>I hope you have a very exciting and safe flight, honey. And always remember that I love you endlessly because you are the sunshine of my world.</p>
-                  </div>
-                </div>
-
-                <div class="blog-card animated fadein delay-3">
-                  <div class="blog-header">
-                    <img class="avatar circle" src="img/avatar/avatar2.jpg" alt="">
-                    <div class="blog-author">
-                      <span>nick</span>
-                      <span class="small">Tokyo</span>
-                    </div>
-                  </div>
-                  <div class="blog-image">
-                    <img src="img/5.jpg" alt="">
-                  </div>
-                  <div class="blog-preview">
-                    <h4 class="uppercase">I am happy with TripIp</h4>
-                    <p>I hope you have a very exciting and safe flight, honey. And always remember that I love you endlessly because you are the sunshine of my world.</p>
-                  </div>
-                </div>
-
-
-              </div> <!-- End of Main Contents -->
-
-            </div>
-
-            <!-- Category List(4) -->
-            <div id="step4" class="col s12 list-top">
-
-              <!-- Main Content -->
-              <div class="animated fadeinup">
-
-                <div class="blog-card animated fadein delay-1">
-                  <div class="blog-header">
-                    <img class="avatar circle" src="img/avatar/avatar1.jpg" alt="">
-                    <div class="blog-author">
-                      <span>Jesica</span>
-                      <span class="small">Paris</span>
-                    </div>
-                  </div>
-                  <div class="blog-image">
-                    <img src="img/2.jpg" alt="">
-                  </div>
-                  <div class="blog-preview">
-                    <h4 class="uppercase">It really Trip in Tokyo</h4>
-                    <p>I hope you have a very exciting and safe flight, honey. And always remember that I love you endlessly because you are the sunshine of my world.</p>
-                  </div>
-                </div>
-
-                <div class="blog-card animated fadein delay-3">
-                  <div class="blog-header">
-                    <img class="avatar circle" src="img/avatar/avatar2.jpg" alt="">
-                    <div class="blog-author">
-                      <span>nick</span>
-                      <span class="small">Tokyo</span>
-                    </div>
-                  </div>
-                  <div class="blog-image">
-                    <img src="img/4.jpg" alt="">
-                  </div>
-                  <div class="blog-preview">
-                    <h4 class="uppercase">I am happy with TripIp</h4>
-                    <p>I hope you have a very exciting and safe flight, honey. And always remember that I love you endlessly because you are the sunshine of my world.</p>
-                  </div>
-                </div>
-
-
-              </div> <!-- End of Main Contents -->
-
-            </div>
-
-            <!-- Category List(5) -->
-            <div id="step5" class="col s12 list-top">
-
-              <!-- Main Content -->
-              <div class="animated fadeinup">
-
-                <div class="blog-card animated fadein delay-1">
-                  <div class="blog-header">
-                    <img class="avatar circle" src="img/avatar/avatar1.jpg" alt="">
-                    <div class="blog-author">
-                      <span>Jesica</span>
-                      <span class="small">Paris</span>
-                    </div>
-                  </div>
-                  <div class="blog-image">
-                    <img src="img/6.jpg" alt="">
-                  </div>
-                  <div class="blog-preview">
-                    <h4 class="uppercase">It really Trip in Tokyo</h4>
-                    <p>I hope you have a very exciting and safe flight, honey. And always remember that I love you endlessly because you are the sunshine of my world.</p>
-                  </div>
-                </div>
-
-
-              </div> <!-- End of Main Contents -->
-
-            </div>
-
-            <!-- Category List(6) -->
-            <div id="step6" class="col s12 list-top">
-
-              <!-- Main Content -->
-              <div class="animated fadeinup">
-
-                <div class="blog-card animated fadein delay-1">
-                  <div class="blog-header">
-                    <img class="avatar circle" src="img/avatar/avatar1.jpg" alt="">
-                    <div class="blog-author">
-                      <span>Jesica</span>
-                      <span class="small">Paris</span>
-                    </div>
-                  </div>
-                  <div class="blog-image">
-                    <img src="img/3.jpg" alt="">
-                  </div>
-                  <div class="blog-preview">
-                    <h4 class="uppercase">It really Trip in Tokyo</h4>
-                    <p>I hope you have a very exciting and safe flight, honey. And always remember that I love you endlessly because you are the sunshine of my world.</p>
-                  </div>
-                </div>
-
-
-              </div> <!-- End of Main Contents -->
-
-            </div>
-
-            <!-- Category List(7) -->
-            <div id="step7" class="col s12 list-top">
-
-              <!-- Main Content -->
-              <div class="animated fadeinup">
-
-                <div class="blog-card animated fadein delay-1">
-                  <div class="blog-header">
-                    <img class="avatar circle" src="img/avatar/avatar1.jpg" alt="">
-                    <div class="blog-author">
-                      <span>Jesica</span>
-                      <span class="small">Paris</span>
-                    </div>
-                  </div>
-                  <div class="blog-image">
-                    <img src="img/2.jpg" alt="">
-                  </div>
-                  <div class="blog-preview">
-                    <h4 class="uppercase">It really Trip in Tokyo</h4>
-                    <p>I hope you have a very exciting and safe flight, honey. And always remember that I love you endlessly because you are the sunshine of my world.</p>
-                  </div>
-                </div>
-
-
-              </div> <!-- End of Main Contents -->
-
-            </div>
-
-            <!-- Category List(8) -->
-            <div id="step8" class="col s12 list-top">
-
-              <!-- Main Content -->
-              <div class="animated fadeinup">
-
-                <div class="blog-card animated fadein delay-1">
-                  <div class="blog-header">
-                    <img class="avatar circle" src="img/avatar/avatar1.jpg" alt="">
-                    <div class="blog-author">
-                      <span>Jesica</span>
-                      <span class="small">Paris</span>
-                    </div>
-                  </div>
-                  <div class="blog-image">
-                    <img src="img/4.jpg" alt="">
-                  </div>
-                  <div class="blog-preview">
-                    <h4 class="uppercase">It really Trip in Tokyo</h4>
-                    <p>I hope you have a very exciting and safe flight, honey. And always remember that I love you endlessly because you are the sunshine of my world.</p>
-                  </div>
-                </div>
-
-
-              </div> <!-- End of Main Contents -->
-
-            </div>
-
-        </div><!-- /List Top -->
-
-        <!-- Floating Action Button -->
-        <div class="floating-button page-fab animated bouncein delay-3">
-            <a class="btn-floating btn-large waves-effect waves-light accent-color btn z-depth-1" href="#">
-                <i class="material-icons">add</i>
-            </a>
+      <!------------m^^m------------ Header Top------------o^^o------------>
+      <header id="" class="primary-color z-depth-1 toolbar-move">
+        <div class="open-left" id="open-left" data-activates="slide-out-left">
+          <i class="material-icons">menu</i>
+        </div>
+        <div class="header-title">TripIp</div>
+        <div class="open-right" id="open-right" data-activates="slide-out">
+          <i class="material-icons">sort</i>
+        </div>
+        <div class="navbar-fixed">
+          <ul class="tabs">
+            <li class="tab"><a class="active" href="#step1">All</a></li>
+            <li class="tab"><a href="#step2">City</a></li>
+            <li class="tab"><a href="#step3">Culture</a></li>
+            <li class="tab"><a href="#step4">Food</a></li>
+            <li class="tab"><a href="#step5">Event</a></li>
+            <li class="tab"><a href="#step6">People</a></li>
+            <li class="tab"><a href="#step7">Traffic</a></li>
+            <li class="tab"><a href="#step8">etc</a></li>
+          </ul>
         </div>
 
-    </div><!-- /Content -->
-</div> <!-- /Main Container -->
+      </header>
 
-<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-<script src="js/jquery.swipebox.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
-<script src="js/swiper.min.js"></script>
-<script src="js/jquery.mixitup.min.js"></script>
-<script src="js/masonry.min.js"></script>
-<script src="js/chart.min.js"></script>
-<script src="js/functions.js"></script>
-<script>
-    $(document).ready(function(){
-    $('ul.tabs').tabs('select_tab', 'tab_id');
-  });
-</script>
-<script>
-// Hide Header on on scroll down
-var didScroll;
-var lastScrollTop = 0;
-var delta = 5;
-var navbarHeight = $('header').outerHeight();
 
-$(window).scroll(function(event){
-    didScroll = true;
-});
 
-setInterval(function() {
-    if (didScroll) {
+
+      <!-- List Top -->
+      <div class="list-move">
+
+        <!-- Category List(1) -->
+        <div id="step1" class="col s12 list-top">
+
+          <!-- Main Content -->
+          <div class="animated fadeinup">
+
+            <div class="blog-card card animated fadein delay-1">
+              <div class="blog-header">
+                <img class="avatar circle" src="img/avatar/avatar1.jpg" alt="">
+                <div class="blog-author">
+                  <span>Jesica</span>
+                  <span class="small">Paris</span>
+                </div>
+              </div>
+              <div class="blog-image">
+                <img src="img/1.jpg" alt="" class="activator">
+              </div>
+              <div class="blog-preview card-content">
+                <span class="card-title activator text-darken-4"><i class="material-icons right">unfold_more</i></span>
+                <h4 class="uppercase activator">It really Trip in Tokyo, really Trip in Tokyo</h4>
+                <p class="activator text-line-two">I hope you have a very exciting and safe flight, honey. And always remember that I love you endlessly because you are the sunshine of my world.</p>
+              </div>
+              <div class="blog-preview card-reveal">
+                <div class="card-title card-reveal-box">
+                  <span class="text-darken-4"><i class="material-icons right">unfold_less</i></span>
+                  <h4 class="card-title uppercase">It really Trip in Tokyo, really Trip in Tokyo</h4>
+                  <p class="card-title text-line-all">I hope you have a very exciting and safe flight, honey. And always remember that I love you endlessly because you are the sunshine of my world. I hope you have a very exciting and safe flight, honey. And always remember that I love you
+                    endlessly because you are the sunshine of my world. I hope you have a very exciting and safe flight, honey. And always remember that I love you endlessly because you are the sunshine of my world. I hope you have a very exciting and
+                    safe flight, honey. And always remember that I love you endlessly because you are the sunshine of my world.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="blog-card card animated fadein delay-2">
+              <div class="blog-header">
+                <img class="avatar circle" src="img/avatar/avatar2.jpg" alt="">
+                <div class="blog-author">
+                  <span>nick</span>
+                  <span class="small">Tokyo</span>
+                </div>
+              </div>
+              <div class="blog-image">
+                <img src="img/2.jpg" alt="" class="activator">
+              </div>
+              <div class="blog-preview card-content">
+                <span class="card-title activator text-darken-4"><i class="material-icons right">unfold_more</i></span>
+                <h4 class="uppercase activator">It really Trip in Tokyo, really Trip in Tokyo</h4>
+                <p class="activator text-line-two">I hope you have a very exciting and safe flight, honey. And always remember that I love you endlessly because you are the sunshine of my world.</p>
+              </div>
+              <div class="blog-preview card-reveal">
+                <div class="card-title card-reveal-box">
+                  <span class="text-darken-4"><i class="material-icons right">unfold_less</i></span>
+                  <h4 class="card-title uppercase">It really Trip in Tokyo, really Trip in Tokyo</h4>
+                  <p class="card-title text-line-all">I hope you have a very exciting and safe flight, honey. And always remember that I love you endlessly because you are the sunshine of my world. I hope you have a very exciting and safe flight, honey. And always remember that I love you
+                    endlessly because you are the sunshine of my world. I hope you have a very exciting and safe flight, honey. And always remember that I love you endlessly because you are the sunshine of my world. I hope you have a very exciting and
+                    safe flight, honey. And always remember that I love you endlessly because you are the sunshine of my world.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="blog-card card animated fadein delay-3">
+              <div class="blog-header">
+                <img class="avatar circle" src="img/avatar/avatar3.jpg" alt="">
+                <div class="blog-author">
+                  <span>sun</span>
+                  <span class="small">USA</span>
+                </div>
+              </div>
+              <div class="blog-image">
+                <img src="img/3.jpg" alt="" class="activator">
+              </div>
+              <div class="blog-preview card-content">
+                <span class="card-title activator text-darken-4"><i class="material-icons right">unfold_more</i></span>
+                <h4 class="uppercase activator">It really Trip in Tokyo, really Trip in Tokyo</h4>
+                <p class="activator text-line-two">I hope you have a very exciting and safe flight, honey. And always remember that I love you endlessly because you are the sunshine of my world.</p>
+              </div>
+              <div class="blog-preview card-reveal">
+                <div class="card-title card-reveal-box">
+                  <span class="text-darken-4"><i class="material-icons right">unfold_less</i></span>
+                  <h4 class="card-title uppercase">It really Trip in Tokyo, really Trip in Tokyo</h4>
+                  <p class="card-title text-line-all">I hope you have a very exciting and safe flight, honey. And always remember that I love you endlessly because you are the sunshine of my world. I hope you have a very exciting and safe flight, honey. And always remember that I love you
+                    endlessly because you are the sunshine of my world. I hope you have a very exciting and safe flight, honey. And always remember that I love you endlessly because you are the sunshine of my world. I hope you have a very exciting and
+                    safe flight, honey. And always remember that I love you endlessly because you are the sunshine of my world.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <!-- End of Main Contents -->
+        </div>
+
+        <!-- Category List(2) -->
+        <div id="step2" class="col s12 list-top">
+
+          <!-- Main Content -->
+          <div class="animated fadeinup">
+
+            <div class="blog-card card animated fadein delay-1">
+              <div class="blog-header">
+                <img class="avatar circle" src="img/avatar/avatar1.jpg" alt="">
+                <div class="blog-author">
+                  <span>Jesica</span>
+                  <span class="small">Paris</span>
+                </div>
+              </div>
+              <div class="blog-image">
+                <img src="img/4.jpg" alt="" class="activator">
+              </div>
+              <div class="blog-preview card-content">
+                <span class="card-title activator text-darken-4"><i class="material-icons right">unfold_more</i></span>
+                <h4 class="uppercase activator">It really Trip in Tokyo, really Trip in Tokyo</h4>
+                <p class="activator text-line-two">I hope you have a very exciting and safe flight, honey. And always remember that I love you endlessly because you are the sunshine of my world.</p>
+              </div>
+              <div class="blog-preview card-reveal">
+                <div class="card-title card-reveal-box">
+                  <span class="text-darken-4"><i class="material-icons right">unfold_less</i></span>
+                  <h4 class="card-title uppercase">It really Trip in Tokyo, really Trip in Tokyo</h4>
+                  <p class="card-title text-line-all">I hope you have a very exciting and safe flight, honey. And always remember that I love you endlessly because you are the sunshine of my world. I hope you have a very exciting and safe flight, honey. And always remember that I love you
+                    endlessly because you are the sunshine of my world. I hope you have a very exciting and safe flight, honey. And always remember that I love you endlessly because you are the sunshine of my world. I hope you have a very exciting and
+                    safe flight, honey. And always remember that I love you endlessly because you are the sunshine of my world.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="blog-card card animated fadein delay-2">
+              <div class="blog-header">
+                <img class="avatar circle" src="img/avatar/avatar2.jpg" alt="">
+                <div class="blog-author">
+                  <span>nick</span>
+                  <span class="small">Tokyo</span>
+                </div>
+              </div>
+              <div class="blog-image">
+                <img src="img/5.jpg" alt="" class="activator">
+              </div>
+              <div class="blog-preview card-content">
+                <span class="card-title activator text-darken-4"><i class="material-icons right">unfold_more</i></span>
+                <h4 class="uppercase activator">It really Trip in Tokyo, really Trip in Tokyo</h4>
+                <p class="activator text-line-two">I hope you have a very exciting and safe flight, honey. And always remember that I love you endlessly because you are the sunshine of my world.</p>
+              </div>
+              <div class="blog-preview card-reveal">
+                <div class="card-title card-reveal-box">
+                  <span class="text-darken-4"><i class="material-icons right">unfold_less</i></span>
+                  <h4 class="card-title uppercase">It really Trip in Tokyo, really Trip in Tokyo</h4>
+                  <p class="card-title text-line-all">I hope you have a very exciting and safe flight, honey. And always remember that I love you endlessly because you are the sunshine of my world. I hope you have a very exciting and safe flight, honey. And always remember that I love you
+                    endlessly because you are the sunshine of my world. I hope you have a very exciting and safe flight, honey. And always remember that I love you endlessly because you are the sunshine of my world. I hope you have a very exciting and
+                    safe flight, honey. And always remember that I love you endlessly because you are the sunshine of my world.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="blog-card card animated fadein delay-3">
+              <div class="blog-header">
+                <img class="avatar circle" src="img/avatar/avatar3.jpg" alt="">
+                <div class="blog-author">
+                  <span>sun</span>
+                  <span class="small">USA</span>
+                </div>
+              </div>
+              <div class="blog-image">
+                <img src="img/6.jpg" alt="" class="activator">
+              </div>
+              <div class="blog-preview card-content">
+                <span class="card-title activator text-darken-4"><i class="material-icons right">unfold_more</i></span>
+                <h4 class="uppercase activator">It really Trip in Tokyo, really Trip in Tokyo</h4>
+                <p class="activator text-line-two">I hope you have a very exciting and safe flight, honey. And always remember that I love you endlessly because you are the sunshine of my world.</p>
+              </div>
+              <div class="blog-preview card-reveal">
+                <div class="card-title card-reveal-box">
+                  <span class="text-darken-4"><i class="material-icons right">unfold_less</i></span>
+                  <h4 class="card-title uppercase">It really Trip in Tokyo, really Trip in Tokyo</h4>
+                  <p class="card-title text-line-all">I hope you have a very exciting and safe flight, honey. And always remember that I love you endlessly because you are the sunshine of my world. I hope you have a very exciting and safe flight, honey. And always remember that I love you
+                    endlessly because you are the sunshine of my world. I hope you have a very exciting and safe flight, honey. And always remember that I love you endlessly because you are the sunshine of my world. I hope you have a very exciting and
+                    safe flight, honey. And always remember that I love you endlessly because you are the sunshine of my world.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <!-- End of Main Contents -->
+
+        </div>
+
+        <!-- Category List(3) -->
+        <div id="step3" class="col s12 list-top">
+
+          <!-- Main Content -->
+          <div class="animated fadeinup">
+
+            <div class="blog-card card animated fadein delay-1">
+              <div class="blog-header">
+                <img class="avatar circle" src="img/avatar/avatar1.jpg" alt="">
+                <div class="blog-author">
+                  <span>Jesica</span>
+                  <span class="small">Paris</span>
+                </div>
+              </div>
+              <div class="blog-image">
+                <img src="img/3.jpg" alt="" class="activator">
+              </div>
+              <div class="blog-preview card-content">
+                <span class="card-title activator text-darken-4"><i class="material-icons right">unfold_more</i></span>
+                <h4 class="uppercase activator">It really Trip in Tokyo, really Trip in Tokyo</h4>
+                <p class="activator text-line-two">I hope you have a very exciting and safe flight, honey. And always remember that I love you endlessly because you are the sunshine of my world.</p>
+              </div>
+              <div class="blog-preview card-reveal">
+                <div class="card-title card-reveal-box">
+                  <span class="text-darken-4"><i class="material-icons right">unfold_less</i></span>
+                  <h4 class="card-title uppercase">It really Trip in Tokyo, really Trip in Tokyo</h4>
+                  <p class="card-title text-line-all">I hope you have a very exciting and safe flight, honey. And always remember that I love you endlessly because you are the sunshine of my world. I hope you have a very exciting and safe flight, honey. And always remember that I love you
+                    endlessly because you are the sunshine of my world. I hope you have a very exciting and safe flight, honey. And always remember that I love you endlessly because you are the sunshine of my world. I hope you have a very exciting and
+                    safe flight, honey. And always remember that I love you endlessly because you are the sunshine of my world.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="blog-card card animated fadein delay-2">
+              <div class="blog-header">
+                <img class="avatar circle" src="img/avatar/avatar2.jpg" alt="">
+                <div class="blog-author">
+                  <span>nick</span>
+                  <span class="small">Tokyo</span>
+                </div>
+              </div>
+              <div class="blog-image">
+                <img src="img/5.jpg" alt="" class="activator">
+              </div>
+              <div class="blog-preview card-content">
+                <span class="card-title activator text-darken-4"><i class="material-icons right">unfold_more</i></span>
+                <h4 class="uppercase activator">It really Trip in Tokyo, really Trip in Tokyo</h4>
+                <p class="activator text-line-two">I hope you have a very exciting and safe flight, honey. And always remember that I love you endlessly because you are the sunshine of my world.</p>
+              </div>
+              <div class="blog-preview card-reveal">
+                <div class="card-title card-reveal-box">
+                  <span class="text-darken-4"><i class="material-icons right">unfold_less</i></span>
+                  <h4 class="card-title uppercase">It really Trip in Tokyo, really Trip in Tokyo</h4>
+                  <p class="card-title text-line-all">I hope you have a very exciting and safe flight, honey. And always remember that I love you endlessly because you are the sunshine of my world. I hope you have a very exciting and safe flight, honey. And always remember that I love you
+                    endlessly because you are the sunshine of my world. I hope you have a very exciting and safe flight, honey. And always remember that I love you endlessly because you are the sunshine of my world. I hope you have a very exciting and
+                    safe flight, honey. And always remember that I love you endlessly because you are the sunshine of my world.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+          <!-- End of Main Contents -->
+
+        </div>
+
+        <!-- Category List(4) -->
+        <div id="step4" class="col s12 list-top">
+
+          <!-- Main Content -->
+          <div class="animated fadeinup">
+
+            <div class="blog-card card animated fadein delay-1">
+              <div class="blog-header">
+                <img class="avatar circle" src="img/avatar/avatar1.jpg" alt="">
+                <div class="blog-author">
+                  <span>Jesica</span>
+                  <span class="small">Paris</span>
+                </div>
+              </div>
+              <div class="blog-image">
+                <img src="img/2.jpg" alt="" class="activator">
+              </div>
+              <div class="blog-preview card-content">
+                <span class="card-title activator text-darken-4"><i class="material-icons right">unfold_more</i></span>
+                <h4 class="uppercase activator">It really Trip in Tokyo, really Trip in Tokyo</h4>
+                <p class="activator text-line-two">I hope you have a very exciting and safe flight, honey. And always remember that I love you endlessly because you are the sunshine of my world.</p>
+              </div>
+              <div class="blog-preview card-reveal">
+                <div class="card-title card-reveal-box">
+                  <span class="text-darken-4"><i class="material-icons right">unfold_less</i></span>
+                  <h4 class="card-title uppercase">It really Trip in Tokyo, really Trip in Tokyo</h4>
+                  <p class="card-title text-line-all">I hope you have a very exciting and safe flight, honey. And always remember that I love you endlessly because you are the sunshine of my world. I hope you have a very exciting and safe flight, honey. And always remember that I love you
+                    endlessly because you are the sunshine of my world. I hope you have a very exciting and safe flight, honey. And always remember that I love you endlessly because you are the sunshine of my world. I hope you have a very exciting and
+                    safe flight, honey. And always remember that I love you endlessly because you are the sunshine of my world.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="blog-card card animated fadein delay-2">
+            <div class="blog-header">
+              <img class="avatar circle" src="img/avatar/avatar2.jpg" alt="">
+              <div class="blog-author">
+                <span>nick</span>
+                <span class="small">Tokyo</span>
+              </div>
+            </div>
+            <div class="blog-image">
+              <img src="img/4.jpg" alt="" class="activator">
+            </div>
+            <div class="blog-preview card-content">
+              <span class="card-title activator text-darken-4"><i class="material-icons right">unfold_more</i></span>
+              <h4 class="uppercase activator">It really Trip in Tokyo, really Trip in Tokyo</h4>
+              <p class="activator text-line-two">I hope you have a very exciting and safe flight, honey. And always remember that I love you endlessly because you are the sunshine of my world.</p>
+            </div>
+            <div class="blog-preview card-reveal">
+              <div class="card-title card-reveal-box">
+                <span class="text-darken-4"><i class="material-icons right">unfold_less</i></span>
+                <h4 class="card-title uppercase">It really Trip in Tokyo, really Trip in Tokyo</h4>
+                <p class="card-title text-line-all">I hope you have a very exciting and safe flight, honey. And always remember that I love you endlessly because you are the sunshine of my world. I hope you have a very exciting and safe flight, honey. And always remember that I love you
+                  endlessly because you are the sunshine of my world. I hope you have a very exciting and safe flight, honey. And always remember that I love you endlessly because you are the sunshine of my world. I hope you have a very exciting and safe
+                  flight, honey. And always remember that I love you endlessly because you are the sunshine of my world.
+                </p>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+        <!-- End of Main Contents -->
+
+      </div>
+
+      <!-- Category List(5) -->
+      <div id="step5" class="col s12 list-top">
+
+        <!-- Main Content -->
+        <div class="animated fadeinup">
+
+          <div class="blog-card card animated fadein delay-1">
+            <div class="blog-header">
+              <img class="avatar circle" src="img/avatar/avatar1.jpg" alt="">
+              <div class="blog-author">
+                <span>Jesica</span>
+                <span class="small">Paris</span>
+              </div>
+            </div>
+            <div class="blog-image">
+              <img src="img/6.jpg" alt="" class="activator">
+            </div>
+            <div class="blog-preview card-content">
+              <span class="card-title activator text-darken-4"><i class="material-icons right">unfold_more</i></span>
+              <h4 class="uppercase activator">It really Trip in Tokyo, really Trip in Tokyo</h4>
+              <p class="activator text-line-two">I hope you have a very exciting and safe flight, honey. And always remember that I love you endlessly because you are the sunshine of my world.</p>
+            </div>
+            <div class="blog-preview card-reveal">
+              <div class="card-title card-reveal-box">
+                <span class="text-darken-4"><i class="material-icons right">unfold_less</i></span>
+                <h4 class="card-title uppercase">It really Trip in Tokyo, really Trip in Tokyo</h4>
+                <p class="card-title text-line-all">I hope you have a very exciting and safe flight, honey. And always remember that I love you endlessly because you are the sunshine of my world. I hope you have a very exciting and safe flight, honey. And always remember that I love you
+                  endlessly because you are the sunshine of my world. I hope you have a very exciting and safe flight, honey. And always remember that I love you endlessly because you are the sunshine of my world. I hope you have a very exciting and safe
+                  flight, honey. And always remember that I love you endlessly because you are the sunshine of my world.
+                </p>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+        <!-- End of Main Contents -->
+
+      </div>
+
+      <!-- Category List(6) -->
+      <div id="step6" class="col s12 list-top">
+
+        <!-- Main Content -->
+        <div class="animated fadeinup">
+
+          <div class="blog-card card animated fadein delay-1">
+            <div class="blog-header">
+              <img class="avatar circle" src="img/avatar/avatar1.jpg" alt="">
+              <div class="blog-author">
+                <span>Jesica</span>
+                <span class="small">Paris</span>
+              </div>
+            </div>
+            <div class="blog-image">
+              <img src="img/3.jpg" alt="" class="activator">
+            </div>
+            <div class="blog-preview card-content">
+              <span class="card-title activator text-darken-4"><i class="material-icons right">unfold_more</i></span>
+              <h4 class="uppercase activator">It really Trip in Tokyo, really Trip in Tokyo</h4>
+              <p class="activator text-line-two">I hope you have a very exciting and safe flight, honey. And always remember that I love you endlessly because you are the sunshine of my world.</p>
+            </div>
+            <div class="blog-preview card-reveal">
+              <div class="card-title card-reveal-box">
+                <span class="text-darken-4"><i class="material-icons right">unfold_less</i></span>
+                <h4 class="card-title uppercase">It really Trip in Tokyo, really Trip in Tokyo</h4>
+                <p class="card-title text-line-all">I hope you have a very exciting and safe flight, honey. And always remember that I love you endlessly because you are the sunshine of my world. I hope you have a very exciting and safe flight, honey. And always remember that I love you
+                  endlessly because you are the sunshine of my world. I hope you have a very exciting and safe flight, honey. And always remember that I love you endlessly because you are the sunshine of my world. I hope you have a very exciting and safe
+                  flight, honey. And always remember that I love you endlessly because you are the sunshine of my world.
+                </p>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+        <!-- End of Main Contents -->
+
+      </div>
+
+      <!-- Category List(7) -->
+      <div id="step7" class="col s12 list-top">
+
+        <!-- Main Content -->
+        <div class="animated fadeinup">
+
+          <div class="blog-card card animated fadein delay-1">
+            <div class="blog-header">
+              <img class="avatar circle" src="img/avatar/avatar1.jpg" alt="">
+              <div class="blog-author">
+                <span>Jesica</span>
+                <span class="small">Paris</span>
+              </div>
+            </div>
+            <div class="blog-image">
+              <img src="img/2.jpg" alt="" class="activator">
+            </div>
+            <div class="blog-preview card-content">
+              <span class="card-title activator text-darken-4"><i class="material-icons right">unfold_more</i></span>
+              <h4 class="uppercase activator">It really Trip in Tokyo, really Trip in Tokyo</h4>
+              <p class="activator text-line-two">I hope you have a very exciting and safe flight, honey. And always remember that I love you endlessly because you are the sunshine of my world.</p>
+            </div>
+            <div class="blog-preview card-reveal">
+              <div class="card-title card-reveal-box">
+                <span class="text-darken-4"><i class="material-icons right">unfold_less</i></span>
+                <h4 class="card-title uppercase">It really Trip in Tokyo, really Trip in Tokyo</h4>
+                <p class="card-title text-line-all">I hope you have a very exciting and safe flight, honey. And always remember that I love you endlessly because you are the sunshine of my world. I hope you have a very exciting and safe flight, honey. And always remember that I love you
+                  endlessly because you are the sunshine of my world. I hope you have a very exciting and safe flight, honey. And always remember that I love you endlessly because you are the sunshine of my world. I hope you have a very exciting and safe
+                  flight, honey. And always remember that I love you endlessly because you are the sunshine of my world.
+                </p>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+        <!-- End of Main Contents -->
+
+      </div>
+
+      <!-- Category List(8) -->
+      <div id="step8" class="col s12 list-top">
+
+        <!-- Main Content -->
+        <div class="animated fadeinup">
+
+          <div class="blog-card card animated fadein delay-1">
+            <div class="blog-header">
+              <img class="avatar circle" src="img/avatar/avatar1.jpg" alt="">
+              <div class="blog-author">
+                <span>Jesica</span>
+                <span class="small">Paris</span>
+              </div>
+            </div>
+            <div class="blog-image">
+              <img src="img/4.jpg" alt="" class="activator">
+            </div>
+            <div class="blog-preview card-content">
+              <span class="card-title activator text-darken-4"><i class="material-icons right">unfold_more</i></span>
+              <h4 class="uppercase activator">It really Trip in Tokyo, really Trip in Tokyo</h4>
+              <p class="activator text-line-two">I hope you have a very exciting and safe flight, honey. And always remember that I love you endlessly because you are the sunshine of my world.</p>
+            </div>
+            <div class="blog-preview card-reveal">
+              <div class="card-title card-reveal-box">
+                <span class="text-darken-4"><i class="material-icons right">unfold_less</i></span>
+                <h4 class="card-title uppercase">It really Trip in Tokyo, really Trip in Tokyo</h4>
+                <p class="card-title text-line-all">I hope you have a very exciting and safe flight, honey. And always remember that I love you endlessly because you are the sunshine of my world. I hope you have a very exciting and safe flight, honey. And always remember that I love you
+                  endlessly because you are the sunshine of my world. I hope you have a very exciting and safe flight, honey. And always remember that I love you endlessly because you are the sunshine of my world. I hope you have a very exciting and safe
+                  flight, honey. And always remember that I love you endlessly because you are the sunshine of my world.
+                </p>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+        <!-- End of Main Contents -->
+
+      </div>
+
+    </div>
+    <!-- /List Top -->
+
+    <!-- Floating Action Button -->
+    <div class="floating-button page-fab animated bouncein delay-3">
+      <a class="btn-floating btn-large waves-effect waves-light accent-color btn z-depth-1" href="#">
+                <i class="material-icons">add</i>
+            </a>
+    </div>
+
+  </div>
+  <!-- /Content -->
+  </div>
+  <!-- /Main Container -->
+
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+  <script src="js/jquery.swipebox.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+  <script src="js/swiper.min.js"></script>
+  <script src="js/jquery.mixitup.min.js"></script>
+  <script src="js/masonry.min.js"></script>
+  <script src="js/chart.min.js"></script>
+  <script src="js/functions.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('ul.tabs').tabs('select_tab', 'tab_id');
+    });
+  </script>
+  <script>
+    // Hide Header on on scroll down
+    var didScroll;
+    var lastScrollTop = 0;
+    var delta = 5;
+    var navbarHeight = $('header').outerHeight();
+
+    $(window).scroll(function(event) {
+      didScroll = true;
+    });
+
+    setInterval(function() {
+      if (didScroll) {
         hasScrolled();
         didScroll = false;
-    }
-}, 250);
+      }
+    }, 250);
 
-function hasScrolled() {
-    var st = $(this).scrollTop();
+    function hasScrolled() {
+      var st = $(this).scrollTop();
 
-    // Make sure they scroll more than delta
-    if(Math.abs(lastScrollTop - st) <= delta)
+      // Make sure they scroll more than delta
+      if (Math.abs(lastScrollTop - st) <= delta)
         return;
 
-    // If they scrolled down and are past the navbar, add class .nav-up.
-    // This is necessary so you never see what is "behind" the navbar.
-    if (st > lastScrollTop && st > navbarHeight){
+      // If they scrolled down and are past the navbar, add class .nav-up.
+      // This is necessary so you never see what is "behind" the navbar.
+      if (st > lastScrollTop && st > navbarHeight) {
         // Scroll Down
         $('header').removeClass('nav-down').addClass('nav-up');
-    } else {
+      } else {
         // Scroll Up
-        if(st + $(window).height() < $(document).height()) {
-            $('header').removeClass('nav-up').addClass('nav-down');
+        if (st + $(window).height() < $(document).height()) {
+          $('header').removeClass('nav-up').addClass('nav-down');
         }
-    }
+      }
 
-    lastScrollTop = st;
-}
-</script>
+      lastScrollTop = st;
+    }
+  </script>
 
 </body>
 
